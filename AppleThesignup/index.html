@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app ="signUpApp">
+    <head>
+        <title>AngularJS Sign Up Application</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap via CDN -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>
+        
+       
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">AngularJS Sign Up App</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/signUp"><i class="fa fa-home"></i> Sign Up</a></li>
+				</ul>
+             </div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+            <div ng-view></div>
+            
+		</div>
+
+		 <!-- load angular and jQuery via CDN -->
+		
+		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.0-rc.1/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.0-rc.1/angular-route.min.js"></script>
+        <script src="app.js"></script>
+		<script src="/routes/routes.js"></script>
+		<script src="controller.js"></script>
+<!--		<script src="services.js"></script>-->
+    </body>
+</html>
